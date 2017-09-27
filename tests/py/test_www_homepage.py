@@ -16,9 +16,10 @@ _none = lambda *a: None
 
 GOOD = { 'amount': '1000'
        , 'payment_method_nonce': 'fake-valid-nonce'
+       , 'grateful_for': 'python, javascript'
        , 'name': 'Alice Liddell'
        , 'email_address': 'alice@example.com'
-       , 'follow_up': 'monthly'
+       , 'follow_up': 'yearly'
        , 'promotion_name': 'Wonderland'
        , 'promotion_url': 'http://www.example.com/'
        , 'promotion_twitter': 'thebestbutter'
@@ -26,6 +27,7 @@ GOOD = { 'amount': '1000'
         }
 BAD = { 'amount': '1,000'
       , 'payment_method_nonce': 'deadbeef' * 5
+      , 'grateful_for': 'x' * (16 * 2**10) + 'x'
       , 'name': 'Alice Liddell' * 20
       , 'email_address': 'alice' * 100 + '@example.com'
       , 'follow_up': 'cheese'
@@ -36,6 +38,7 @@ BAD = { 'amount': '1,000'
        }
 PARTIAL = { 'amount': '1000'
           , 'payment_method_nonce': 'fake-valid-nonce'
+          , 'grateful_for': ''
           , 'name': ''
           , 'email_address': ''
           , 'follow_up': 'quarterly'
@@ -46,15 +49,16 @@ PARTIAL = { 'amount': '1000'
            }
 SCRUBBED = { 'amount': '1000'
            , 'payment_method_nonce': ''
+           , 'grateful_for': 'x' * (16 * 2**10)
            , 'name': 'Alice Liddell' * 19 + 'Alice Li'
            , 'email_address': 'alice' * 51
-           , 'follow_up': 'monthly'
+           , 'follow_up': 'quarterly'
            , 'promotion_name': 'WonderlandWonderlandWonderlandWo'
            , 'promotion_url': 'http://www.example.com/' + 'cheese' * 38 + 'chee'
            , 'promotion_twitter': 'thebestbutterthebestbutterthebes'
            , 'promotion_message': 'Love me!' * 16
             }
-ALL = ['amount', 'payment_method_nonce', 'name', 'email_address', 'follow_up',
+ALL = ['amount', 'payment_method_nonce', 'grateful_for', 'name', 'email_address', 'follow_up',
        'promotion_name', 'promotion_url', 'promotion_twitter', 'promotion_message']
 
 
@@ -121,7 +125,7 @@ class Store(PayForOpenSourceHarness):
         parsed.pop('payment_method_nonce')
         assert self.fetch() is None
         _store(parsed)
-        assert self.fetch().follow_up == 'monthly'
+        assert self.fetch().follow_up == 'yearly'
 
 
 class Send(QueuedEmailHarness):
