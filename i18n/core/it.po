@@ -84,8 +84,17 @@ msgid ""
 "identity information for {country_name} on Gratipay."
 msgstr "Questa è una email di transazione per farti sapere che un {viewer} ha visualizzato le tue informazioni di identità per {country_name} su Gratipay."
 
-msgid "Connect to {0} on Gratipay?"
-msgstr "Connettersi a {0} su Gratipay?"
+msgid "Invoice from Gratipay"
+msgstr "Fattura da Gratipay"
+
+msgid "Thank you for your payment of {amount} for open source!"
+msgstr "Grazie per il tuo pagamento di {amount} per l'open source!"
+
+msgid "View Invoice"
+msgstr "Vedi Fattura"
+
+msgid "Follow this link to view your invoice:"
+msgstr "Segui questo link per vedere la tua fattura:"
 
 msgid "We have your application!"
 msgstr "Abbiamo la tua candidatura!"
@@ -187,6 +196,9 @@ msgid ""
 "This is a notification sent to {email_address_2} because that is the primary"
 " email address we have on file."
 msgstr "Stiamo connttendo {email_address} all'account Gratipay {username}. Questa è una notifica inviata a {email_address_2} perché è l'indirizzo email primario che abbiamo in registro."
+
+msgid "Connect to {0} on Gratipay?"
+msgstr "Connettersi a {0} su Gratipay?"
 
 msgid ""
 "We've received a request to connect the {package_name} npm package to the "
@@ -347,6 +359,9 @@ msgstr "Disconnetti"
 
 msgid "Search"
 msgstr "Cerca"
+
+msgid "Browse"
+msgstr "Naviga"
 
 msgid "About"
 msgstr "Chi siamo"
@@ -698,6 +713,151 @@ msgstr "Accetto a rendere la mia candidatura {0}pubblicamente visibile{1}."
 msgid "I agree to the other {0}terms of service{1} as well."
 msgstr "Acconsento anche agli altri {0}termini di servizio{1}."
 
+msgid "Eep! Mind looking over your info for us?"
+msgstr "Aah! Ti dispiacerebbe controllare le tue informazioni per noi?"
+
+msgid "Pay for open source."
+msgstr "Paga per open source."
+
+msgid "Payment complete!"
+msgstr "Pagamento completato!"
+
+msgid "2000"
+msgstr "2000"
+
+msgid "Please enter a whole dollar amount (minimum $10, no punctuation)."
+msgstr "Per favore, inserisci un'ammontare di dollari in numeri interi (minimo $10, senza punteggiatura)."
+
+msgid ""
+"We {a}recommend{_a} $2,000 per year{br}per technical employee{br}at your "
+"company."
+msgstr "{a}Raccomandiamo{_a} $2000 all'anno{br}per ciascun impiegato tecnico{br}nella tua azienda."
+
+msgid "Thank you for paying for open source!"
+msgstr "Grazie per pagare per l'open source!"
+
+msgid "Email {support}{br}with questions or feedback."
+msgstr "Invia un'email a {support} con{br}domande o suggerimenti."
+
+msgid "We weren't able to process your card."
+msgstr "Non siamo stati in grado di elaborare la tua carta."
+
+msgid "Wait ... What? Why?"
+msgstr "Aspetta ... Cosa? Perché?"
+
+msgid ""
+"Open source boosts the productivity of your developers {a}by 20%{_a}. "
+"Companies fund half of open source through developer time."
+msgstr "L'open source incrementa la produttività dei tuoi sviluppatori {a}del 20%{_a}. Le aziende finanziano metà dell'open source attraverso il lavoro degli sviluppatori."
+
+msgid ""
+"Gratipay helps you fund {a}the other half{_a}. By paying for open source "
+"through Gratipay, you {b}strengthen the foundation{_b} your developers build"
+" on."
+msgstr "Gratipay ti aiuta a finanziare {a}l'altra metà{_a}. Pagando per l'open source attraverso Gratipay, {b}rinforzi le fondamenta{_b} sopra le quali i tuoi sviluppatori costruiscono."
+
+msgid ""
+"Gratipay can {b}report back{_b} to you on the progress your payment enables,"
+" and we can {b}promote{_b} your contribution, increasing your visibility "
+"within the open source community."
+msgstr "Gratipay può {b}informarti{_b} dei progressi messi in grado dal tuo finanziamento, e possiamo {b}promuovere{_b} il tuo contributo, aumentando la tua visibilità nella comunità dell'open source."
+
+msgid "Optional"
+msgstr "Opzionale"
+
+msgid "What projects?"
+msgstr ""
+
+msgid "What ecosystems and/or projects are you grateful for?"
+msgstr ""
+
+msgid "Please enter less than 16 kB of data."
+msgstr ""
+
+msgid "Who are you?"
+msgstr "Chi sei?"
+
+msgid "And do you wish to subscribe to our newsletter?"
+msgstr "E desidere iscriverti alla nostra newsletter?"
+
+msgid "Your Name"
+msgstr "Il Tuo Nome"
+
+msgid "Please enter a value shorter than 256 characters."
+msgstr "Per favore inserisci un valore con meno di 256 caratteri."
+
+msgid "Your Email Address"
+msgstr "Il Tuo Indirizzo Email"
+
+msgid "Please enter a valid email address shorter than 255 characters."
+msgstr "Per favore inserisci un indirizzo email valido con meno di 255 caratteri."
+
+msgid "You will get a link to an invoice for your payment."
+msgstr "Riceverai un link alla fattura del tuo pagamento."
+
+msgid "Follow-up"
+msgstr "Seguito"
+
+msgid "Monthly"
+msgstr "Mensile"
+
+msgid "Quarterly"
+msgstr "Trimestrale"
+
+msgid "Yearly"
+msgstr "Annuale"
+
+msgid "Never"
+msgstr "Mai"
+
+msgid "I am surprised that you are seeing this message."
+msgstr "Sono sorpreso che tu stia vedendo questo messaggio."
+
+msgid "You will get a progress report, with a reminder to pay again."
+msgstr "Riceverai un aggiornamento sul progresso, con un promemoria di pagare nuovamente."
+
+msgid "Promotion"
+msgstr "Promozione"
+
+msgid "We (probably) want to brag about you! May we?"
+msgstr "(Probabilmente) vorremmo vantarci di te! Possiamo?"
+
+msgid "Your Company Name"
+msgstr "Nome Della Tua Azienda"
+
+msgid "Please enter a value 32 characters or shorter."
+msgstr "Per favore inserisci un valore con 32 caratteri o meno."
+
+msgid "Your Landing Page URL"
+msgstr "URL Della Tua Landing Page"
+
+msgid "Please enter a valid URL shorter than 256 characters."
+msgstr "Per favore inserisci un URL valido con meno di 256 caratteri."
+
+msgid "Your Company Twitter Handle"
+msgstr "Profilo Twitter Della Tua Azienda"
+
+msgid "Please enter a valid Twitter handle."
+msgstr "Per favore inserisci un profilo Twitter valido."
+
+msgid "Your Message to the Open Source Community"
+msgstr "Il tuo Messaggio alla Comunità Open Source"
+
+msgid "Please limit your message to 128 characters."
+msgstr "Per favore limita il tuo messaggio a 128 caratteri."
+
+msgid "Submit Form"
+msgstr "Invia Il Modulo"
+
+msgid "Pay for Open Source"
+msgstr "Paga per l'Open Source"
+
+msgid "Processing ..."
+msgstr "In elaborazione ..."
+
+msgid "By submitting this form you agree to our {a}terms of service{_a}."
+msgstr "Inviando questo modulo, accetti i nostri {a}termini di servizio{_a}."
+
 msgid "Approved"
 msgstr "Approvati"
 
@@ -709,15 +869,6 @@ msgstr "Rifiutati"
 
 msgid "Featured"
 msgstr "In primo piano"
-
-msgid "Projects"
-msgstr "Progetti"
-
-msgid "Pay for open source."
-msgstr "Paga per open source."
-
-msgid "Fund Your Project"
-msgstr "Finanza il Tuo Progetto"
 
 msgid "Search Gratipay"
 msgstr "Cerca su Gratipay"
@@ -931,6 +1082,12 @@ msgstr "{b}{escrow}{_b} sono depositati con garanzia su Gratipay."
 
 msgid "The Delpan Incident"
 msgstr "L'Incidente Delpan"
+
+msgid "Projects"
+msgstr "Progetti"
+
+msgid "Fund Your Project"
+msgstr "Finanza il Tuo Progetto"
 
 msgid "1.0 Payout Review"
 msgstr "Revisione Pagamento 1.0"
@@ -1208,23 +1365,26 @@ msgstr "Le impostazioni della tua privacy sono state cambiate."
 msgid "Statement too big!"
 msgstr "Frase troppo lunga!"
 
-msgid "Primary"
-msgstr "Primario"
+msgid "Addresses"
+msgstr ""
 
-msgid "Unverified"
-msgstr "Non verificato"
-
-msgid "Remove"
-msgstr "Rimuovi"
-
-msgid "Resend"
-msgstr "Invia nuovamente"
+msgid "Linked"
+msgstr ""
 
 msgid "Set as primary"
 msgstr "Imposta come primario"
 
-msgid "Add email address"
-msgstr "Aggiungi un indirizzo email"
+msgid "Remove"
+msgstr "Rimuovi"
+
+msgid "Check your inbox"
+msgstr ""
+
+msgid "Resend"
+msgstr "Invia nuovamente"
+
+msgid "Send verification"
+msgstr ""
 
 msgid "Notifications"
 msgstr "Notifiche"
@@ -1430,6 +1590,9 @@ msgstr "Identità"
 
 msgid "Verified"
 msgstr "Verificato"
+
+msgid "Unverified"
+msgstr "Non verificato"
 
 msgid "Add Identity"
 msgstr "Aggiungi Identità"

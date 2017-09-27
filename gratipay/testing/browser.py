@@ -7,7 +7,13 @@ import os
 import time
 from contextlib import contextmanager
 
+from selenium.common.exceptions import (WebDriverException,
+                                        StaleElementReferenceException)
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.expected_conditions import staleness_of
+from selenium.webdriver.support.ui import WebDriverWait
 from splinter.browser import _DRIVERS
+from splinter.driver.webdriver import WebDriverElement
 from selenium.common.exceptions import StaleElementReferenceException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import staleness_of
@@ -24,6 +30,17 @@ _browser = None
 
 class NeverLeft(Exception): pass
 class NeverShowedUp(Exception): pass
+
+
+# Monkey-patch .click to work around stackoverflow.com/q/11908249
+def monkey_click(self):
+    try:
+        self._element.click()                   # Firefox 55
+    except WebDriverException as exc:
+        if not exc.msg.startswith('unknown error: Element is not clickable'):
+            raise
+        self._element.send_keys(Keys.RETURN)    # Chrome 60
+WebDriverElement.click = monkey_click
 
 
 class BrowserHarness(Harness):
