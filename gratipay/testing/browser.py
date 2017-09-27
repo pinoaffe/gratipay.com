@@ -14,9 +14,6 @@ from selenium.webdriver.support.expected_conditions import staleness_of
 from selenium.webdriver.support.ui import WebDriverWait
 from splinter.browser import _DRIVERS
 from splinter.driver.webdriver import WebDriverElement
-from selenium.common.exceptions import StaleElementReferenceException
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support.expected_conditions import staleness_of
 
 from gratipay.security import user
 
